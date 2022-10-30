@@ -462,7 +462,7 @@ section {
 }
 
 .section-bg {
-  background-color: #d7f9f4;
+  background-color: #f7fbfe;
 }
 
 .section-title {
@@ -503,7 +503,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #d7f9f4;
+  background: #f3f9fd;
   padding: 10px 0;
   text-align: center;
 }
@@ -685,7 +685,7 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #d7f9f4;
+  background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
