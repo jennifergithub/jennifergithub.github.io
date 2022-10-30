@@ -5,7 +5,7 @@ Go to your Terminal.
 
 1. git clone "https://git..."
 2. git remote-v, should show 2 entries (one for fetch, one for push)
-3. git fetch origin main
+3. git fetch
 4. git checkout [name of your branch], you should now be on your branch
 5. git pull origin main, will pull from main branch
 
