@@ -500,41 +500,41 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
+# sponsors
 --------------------------------------------------------------*/
-.clients {
+.sponsors {
   background: #f3f9fd;
   padding: 10px 0;
   text-align: center;
 }
 
-.clients .col-lg-2 {
+.sponsors .col-lg-2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients img {
-  width: 50%;
+.sponsors img {
+  width: 60%;
   filter: grayscale(100);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
   display: inline-block;
   padding: 10px 0;
 }
 
-.clients img:hover {
+.sponsors img:hover {
   filter: none;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-  .clients img {
+  .sponsors img {
     width: 40%;
   }
 }
 
 @media (max-width: 575px) {
-  .clients img {
+  .sponsors img {
     width: 30%;
   }
 }
@@ -679,9 +679,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Programs
 --------------------------------------------------------------*/
-.services .icon-box {
+.programs .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -692,7 +692,7 @@ section {
   z-index: 1;
 }
 
-.services .icon-box::before {
+.programs .icon-box::before {
   content: "";
   position: absolute;
   background: #e1f0fa;
@@ -705,7 +705,7 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
+.programs .icon-box:hover::before {
   background: #3498db;
   right: 0;
   top: 0;
@@ -714,7 +714,7 @@ section {
   border-radius: 0px;
 }
 
-.services .icon {
+.programs .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
   display: inline-block;
@@ -726,49 +726,49 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.services .icon i {
+.programs .icon i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
 }
 
-.services .title {
+.programs .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.programs .title a {
   color: #111;
 }
 
-.services .description {
+.programs .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a,
-.services .icon-box:hover .description {
+.programs .icon-box:hover .title a,
+.programs .icon-box:hover .description {
   color: #fff;
 }
 
-.services .icon-box:hover .icon {
+.programs .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.programs .icon-box:hover .icon i {
   color: #3498db;
 }
 
 /*--------------------------------------------------------------
-# More Services
+# More programs
 --------------------------------------------------------------*/
-.more-services {
+.more-programs {
   padding-top: 20px;
 }
 
-.more-services .card {
+.more-programs .card {
   border: 0;
   padding: 160px 20px 20px 20px;
   position: relative;
@@ -778,7 +778,7 @@ section {
   background-position: center center;
 }
 
-.more-services .card-body {
+.more-programs .card-body {
   z-index: 10;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px 30px;
@@ -788,21 +788,21 @@ section {
   border-radius: 5px;
 }
 
-.more-services .card-title {
+.more-programs .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.more-services .card-title a {
+.more-programs .card-title a {
   color: #222222;
 }
 
-.more-services .card-text {
+.more-programs .card-text {
   color: #5e5e5e;
 }
 
-.more-services .read-more a {
+.more-programs .read-more a {
   color: #777777;
   text-transform: uppercase;
   font-weight: 600;
@@ -810,18 +810,18 @@ section {
   transition: 0.4s;
 }
 
-.more-services .read-more a:hover {
+.more-programs .read-more a:hover {
   text-decoration: underline;
 }
 
-.more-services .card:hover .card-body {
+.more-programs .card:hover .card-body {
   background: #3498db;
 }
 
-.more-services .card:hover .read-more a,
-.more-services .card:hover .card-title,
-.more-services .card:hover .card-title a,
-.more-services .card:hover .card-text {
+.more-programs .card:hover .read-more a,
+.more-programs .card:hover .card-title,
+.more-programs .card:hover .card-title a,
+.more-programs .card:hover .card-text {
   color: #fff;
 }
 
