@@ -25,3 +25,21 @@ When you want to edit on your branch but first have to pull from main:
 2. git pull
 
 Then, go to the browser and click on "new pull request", assign reviewers if needed
+
+
+## using the profile storage site
+Go to https://www.apispreadsheets.com/ and open up ProfileResponses.xlsx
+
+To access the data:
+Option 1: click File Data under the Actions menu on the left and view the data on the site.
+Option 2: click File Data under the Actions menu on the left and then go to the URL above the table to view in another window.
+Option 3: under ProfileResponses.xlsx click Download File.
+
+To edit the columns:
+1. Edit the code as needed so that the id's match what column names you want.
+2. Download the excel file from the site.
+3. Add/remove headers so that they match the id's in the code.
+4. Save and reupload file onto the site.
+
+To set up a new spreadsheet:
+Follow this: https://lovespreadsheets.medium.com/save-web-form-data-to-spreadsheets-880f95431f00
