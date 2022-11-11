@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Girls Connect - Profile</title>
+  <title>Girls Connect - Schedule Me</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,26 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script>
-    function SubForm (){
-        $.ajax({
-            url:'https://api.apispreadsheets.com/data/h5r02BzedWiXgs85/',
-            type:'post',
-            data:$("#profileform").serializeArray(),
-            success: function(){
-            alert("Form Data Submitted :)")
-            },
-            error: function(){
-            alert("There was an error :(")
-            }
-        });
-    }
-  </script>
 
   <!-- =======================================================
   * Template Name: Vesperr - v4.9.1
@@ -70,14 +50,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="profile.html" target="none">Profile</a></li>
-          <li><a class="nav-link scrollto " href="schedule-me.html" target="none">Schedule Me</a></li>
-          <li><a class="nav-link scrollto" href="chat.html">Chat</a></li>
-          <li><a href="bracket.html">Bracket</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="profile.html" target="none">Get Started</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="profile.html">Profile</a></li>
+          <li><a class="nav-link scrollto " href="#schedule-me">Schedule Me</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Chat</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
+          <li><a class="getstarted scrollto" href="profile.html">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -89,18 +68,18 @@
 
   <main id="main">
 
-    <!-- ======= Create/Update Profile ======= -->
+    <!-- ======= Schedule Me for a Chat ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Your Profile</h2>
+          <h2>Schedule Me</h2>
         </div>
 
         <div class="row">
 
           <div class="col-lg-15 col-md-16" data-aos="fade-up" data-aos-delay="100">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="profileform">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your First and Last Name" required>
                 </div>
@@ -111,7 +90,7 @@
                   <input type="text" class="form-control" name="loopId" id="loopId" placeholder="Your College Loops ID" required>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="A short description about you and what you want to get from your Connect Chats" required></textarea>
+                  <textarea class="form-control" name="message" rows="5" placeholder="A short description about you and what you want to get from your Connect Chats" required></textarea>
                 </div>
                 <div class="form-group">
                     <text>Please upload your resume if you have one</text>
@@ -129,24 +108,24 @@
                 <div class="form-group">
                     <text>What you would like to get out of Girls Connect:</text>
                     <fieldset>
-                        <input type="checkbox" name="socializing" id="socializing">
+                        <input type="checkbox" name="purpose" value="socializing" id="socializing">
                         <label for="socializing">Meet new people</label><br>
-                        <input type="checkbox" name="hsAdvice" id="hsAdvice">
+                        <input type="checkbox" name="purpose" value="hsAdvice" id="hsAdvice">
                         <label for="hsAdvice">High school advice</label><br>
-                        <input type="checkbox" name="collegeAdvice" id="collegeAdvice">
+                        <input type="checkbox" name="purpose" value="collegeAdvice" id="collegeAdvice">
                         <label for="collegeAdvice">College advice</label><br>
-                        <input type="checkbox" name="careerAdvice" id="careerAdvice">
+                        <input type="checkbox" name="purpose" value="careerAdvice" id="careerAdvice">
                         <label for="careerAdvice">Career advice</label><br>
-                        <input type="checkbox" name="projectWork" id="projectWork">
+                        <input type="checkbox" name="purpose" value="projectWork" id="projectWork">
                         <label for="projectWork">Project questions</label><br>
                     </fieldset>
                 </div>
-                <!-- <div class="my-3">
+                <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your profile has been created. Thank you!</div>
-                </div> -->
-                <div class="text-center"><button onclick="SubForm()" type="submit">Save Changes</button></div>
+                </div>
+                <div class="text-center"><button type="submit">Save Changes</button></div>
               </form>
           </div>
 
