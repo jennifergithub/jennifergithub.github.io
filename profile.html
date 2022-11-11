@@ -28,6 +28,26 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/h5r02BzedWiXgs85/',
+            type:'post',
+            data:$("#profileform").serializeArray(),
+            success: function(){
+            alert("Form Data Submitted :)")
+            },
+            error: function(){
+            alert("There was an error :(")
+            }
+        });
+    }
+  </script>
+
   <!-- =======================================================
   * Template Name: Vesperr - v4.9.1
   * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
@@ -80,7 +100,7 @@
         <div class="row">
 
           <div class="col-lg-15 col-md-16" data-aos="fade-up" data-aos-delay="100">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="profileform">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your First and Last Name" required>
                 </div>
@@ -91,7 +111,7 @@
                   <input type="text" class="form-control" name="loopId" id="loopId" placeholder="Your College Loops ID" required>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" placeholder="A short description about you and what you want to get from your Connect Chats" required></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="A short description about you and what you want to get from your Connect Chats" required></textarea>
                 </div>
                 <div class="form-group">
                     <text>Please upload your resume if you have one</text>
@@ -109,24 +129,24 @@
                 <div class="form-group">
                     <text>What you would like to get out of Girls Connect:</text>
                     <fieldset>
-                        <input type="checkbox" name="purpose" value="socializing" id="socializing">
+                        <input type="checkbox" name="socializing" id="socializing">
                         <label for="socializing">Meet new people</label><br>
-                        <input type="checkbox" name="purpose" value="hsAdvice" id="hsAdvice">
+                        <input type="checkbox" name="hsAdvice" id="hsAdvice">
                         <label for="hsAdvice">High school advice</label><br>
-                        <input type="checkbox" name="purpose" value="collegeAdvice" id="collegeAdvice">
+                        <input type="checkbox" name="collegeAdvice" id="collegeAdvice">
                         <label for="collegeAdvice">College advice</label><br>
-                        <input type="checkbox" name="purpose" value="careerAdvice" id="careerAdvice">
+                        <input type="checkbox" name="careerAdvice" id="careerAdvice">
                         <label for="careerAdvice">Career advice</label><br>
-                        <input type="checkbox" name="purpose" value="projectWork" id="projectWork">
+                        <input type="checkbox" name="projectWork" id="projectWork">
                         <label for="projectWork">Project questions</label><br>
                     </fieldset>
                 </div>
-                <div class="my-3">
+                <!-- <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your profile has been created. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Save Changes</button></div>
+                </div> -->
+                <div class="text-center"><button onclick="SubForm()" type="submit">Save Changes</button></div>
               </form>
           </div>
 
